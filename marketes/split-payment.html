@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Split Payment — eBook Prático</title>
+  <meta name="description" content="eBook prático sobre Split Payment: como funciona, quando usar e como integrar em vendas digitais (Hotmart, Kiwify).">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reaproveitei as cores e variáveis do Marketês para manter identidade */
+    :root{
+      --bg: #121A2C;
+      --surface: #1C2843;
+      --gold: #D9AE5C;
+      --gold-glow: #E8C579;
+      --steel: #9DB2D6;
+      --text: #F2EFE7;
+      --border: rgba(157,178,214,0.16);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+    .container{max-width:920px;margin:0 auto;padding:0 24px}
+
+    /* Hero */
+    .hero{padding:72px 0 36px;display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center}
+    .hero .headline{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(28px,6vw,48px);line-height:1;color:var(--text)}
+    .hero .lead{color:var(--steel);margin-top:18px;font-size:17px;max-width:48ch}
+
+    /* Mockup */
+    .mockup{width:100%;max-width:380px;margin:0 auto;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:linear-gradient(180deg,#071125 0%,var(--surface) 100%);display:flex;align-items:center;justify-content:center;padding:28px}
+    .mockup img{width:100%;height:auto;display:block}
+
+    /* CTA */
+    .cta-wrap{text-align:left;margin-top:22px}
+    .cta, .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:var(--bg);font-weight:700;font-size:17px;text-decoration:none;padding:14px 34px;border-radius:999px;transition:background .18s ease}
+    .cta:hover,.btn:hover{background:var(--gold-glow)}
+
+    /* Sections */
+    section{padding:64px 0}
+    .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:12px}
+    h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(22px,4vw,32px);margin-bottom:18px}
+    p{color:var(--steel);font-size:16px}
+
+    /* For whom */
+    .who{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .who .item{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px}
+    .who .item h3{font-family:'Fraunces',serif;font-size:16px;color:var(--text);margin-bottom:8px}
+    .who .item p{font-size:14.5px;color:var(--steel)}
+
+    /* Modules / topics */
+    .modules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+    .module{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:18px}
+    .module h4{font-family:'Fraunces',serif;color:var(--gold);margin-bottom:8px}
+    .module p{color:var(--text);font-size:15px}
+
+    /* Offer */
+    .offer{display:flex;gap:28px;align-items:center;justify-content:space-between;background:transparent}
+    .offer-box{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;max-width:460px}
+    .price{font-family:'Fraunces',serif;font-size:36px;color:var(--text);font-weight:700}
+    .price-terms{color:var(--steel);font-size:14px;margin-top:6px}
+    .guarantee{color:var(--steel);font-size:13px;margin-top:12px}
+
+    footer{padding:36px 0 60px;text-align:center;color:var(--steel);font-size:13px}
+
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr; text-align:center}
+      .cta-wrap{text-align:center}
+      .who{grid-template-columns:1fr}
+      .offer{flex-direction:column}
+      .offer-box{margin:0 auto}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero container">
+    <div>
+      <div class="headline">Split Payment Desmistificado: o eBook prático</div>
+      <p class="lead">Aprenda o que é Split Payment, quando usar (marketplaces, afiliados e gateways) e como configurar pagamentos divididos sem dor de cabeça — com exemplos para Hotmart, Kiwify e gateways brasileiros.</p>
+
+      <div class="cta-wrap">
+        <a class="cta btn btn-primary" href="https://pay.hotmart.com/K107045188K?checkoutMode=10">Quero o eBook sobre Split Payment</a>
+        <div style="margin-top:8px;color:var(--steel);font-size:13px">Acesso imediato • Garantia de 7 dias</div>
+      </div>
+    </div>
+
+    <aside>
+      <div class="mockup" aria-hidden="true">
+        <!-- Espaço para mockup do eBook; substitua a src pelo arquivo real -->
+        <img src="/marketes/assets/ebook-mockup-split.png" alt="Mockup eBook Split Payment" onerror="this.style.opacity=.15;this.alt='Mockup aqui'">
+      </div>
+    </aside>
+  </header>
+
+  <main>
+    <section class="container">
+      <span class="eyebrow">Para quem é</span>
+      <h2>Quem vai se beneficiar deste eBook</h2>
+      <div class="who">
+        <div class="item">
+          <h3>Produtores</h3>
+          <p>Entenda como dividir comissões e repassar pagamentos entre produtores, afiliados e plataformas sem perder controle.</p>
+        </div>
+        <div class="item">
+          <h3>Afiliados</h3>
+          <p>Saiba como funcionam as regras de repasse, prazos e responsabilidade fiscal ao receber pagamentos fracionados.</p>
+        </div>
+        <div class="item">
+          <h3>Agências / Devs</h3>
+          <p>Aprenda padrões de integração e exemplos práticos para Hotmart, Kiwify e gateways via API.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <span class="eyebrow">Conteúdo</span>
+      <h2>O que você vai aprender</h2>
+      <div class="modules">
+        <div class="module">
+          <h4>Módulo 1 — Fundamentos</h4>
+          <p>O que é Split Payment, diferenças entre split at authorization e settlement, e impactos nas chargebacks.</p>
+        </div>
+        <div class="module">
+          <h4>Módulo 2 — Plataformas</h4>
+          <p>Como Hotmart, Kiwify e marketplaces tratam repasses; exemplos de fluxo de pagamento e regras.</p>
+        </div>
+        <div class="module">
+          <h4>Módulo 3 — Integração</h4>
+          <p>Exemplos de chamadas API, webhooks e testes para validar repasses automáticos entre contas.</p>
+        </div>
+        <div class="module">
+          <h4>Módulo 4 — Fiscal e Compliance</h4>
+          <p>Tratamento de notas, retenções, MEI/empresa e como documentar repasses para evitar problemas fiscais.</p>
+        </div>
+        <div class="module">
+          <h4>Módulo 5 — Casos reais</h4>
+          <p>Estudos de caso com repasses entre produtor e afiliado, marketplace e suspenções por chargeback.</p>
+        </div>
+        <div class="module">
+          <h4>Módulo 6 — Checklist de lançamento</h4>
+          <p>Checklist prático para configurar split payments em um lançamento com afiliados e parceiros.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="offer" style="align-items:flex-start">
+        <div class="offer-box">
+          <div class="price">R$29,90</div>
+          <div class="price-terms">Em até 3x sem juros</div>
+          <div class="guarantee">Garantia incondicional de 7 dias.</div>
+          <div style="margin-top:18px">
+            <a class="cta btn btn-primary" href="https://pay.hotmart.com/K107045188K?checkoutMode=10">Comprar agora — Checkout</a>
+          </div>
+        </div>
+
+        <div style="max-width:420px;color:var(--steel);font-size:15px">
+          <h3 style="font-family:'Fraunces',serif;color:var(--text);margin-bottom:10px">Pronto para integrar pagamentos sem dor de cabeça?</h3>
+          <p>Receba todos os passos, exemplos de API e checklists para subir vendas com split payment em plataformas como Hotmart e Kiwify.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Split Payment eBook — Todos os direitos reservados.</div>
+  </footer>
+
+</body>
+</html>
