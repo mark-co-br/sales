@@ -19,7 +19,7 @@ A estrutura da página deve seguir o modelo de alta conversão:
 
 ## 3. Estrutura de URLs e GitHub Pages
 * O domínio base de publicação oficial é: `https://mark-co-br.github.io/sales/`
-* Portanto, todas as páginas devem ser criadas dentro da pasta `marketes/` (ex: `marketes/nome-da-pagina.html`), resultando na URL final: `https://mark-co-br.github.io/sales/marketes/nome-da-pagina.html`.
+* Portanto, todas as páginas devem ser criadas dentro da pasta `sales/` (ex: `sales/nome-da-pagina.html`), resultando na URL final: `https://mark-co-br.github.io/sales/nome-da-pagina.html`.
 * Os links internos e caminhos de arquivos devem ser relativos ou apontar corretamente para esta estrutura para que nada quebre no GitHub Pages.
 
 ## 4. Rasteadores, Pixels e Checkouts
